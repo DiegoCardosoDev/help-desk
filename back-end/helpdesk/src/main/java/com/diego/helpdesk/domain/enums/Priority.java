@@ -2,7 +2,7 @@ package com.diego.helpdesk.domain.enums;
 
 public enum Priority {
 
-    DISCHARGE(0,"DISCHARGE"), MEDIA(1,"MEDIA"), LOW(2,"LOW");
+    DISCHARGE(0, "DISCHARGE"), MEDIA(1, "MEDIA"), LOW(2, "LOW");
 
     private Integer code;
     private String description;
@@ -20,13 +20,13 @@ public enum Priority {
         return description;
     }
 
-    public static Priority toEnum(Integer code){
-        if(code==null){
+    public static Priority toEnum(Integer code) {
+        if (code == null) {
             return null;
         }
-        for (Priority x : Priority.values()){
+        for (Priority x : Priority.values()) {
 
-            if(code.equals(x.getCode())){
+            if (code.equals(x.getCode())) {
                 return x;
 
             }
